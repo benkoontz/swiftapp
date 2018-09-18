@@ -15,6 +15,7 @@
 		4B7CEC262151966B00457672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7CEC242151966B00457672 /* LaunchScreen.storyboard */; };
 		4B7CEC312151966B00457672 /* swiftappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CEC302151966B00457672 /* swiftappTests.swift */; };
 		4B7CEC3C2151966B00457672 /* swiftappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CEC3B2151966B00457672 /* swiftappUITests.swift */; };
+		4B829D6221519B92004FB394 /* CMS_Creative_164657191_Kingfisher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B829D6121519B92004FB394 /* CMS_Creative_164657191_Kingfisher.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4B7CEC372151966B00457672 /* swiftappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7CEC3B2151966B00457672 /* swiftappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftappUITests.swift; sourceTree = "<group>"; };
 		4B7CEC3D2151966B00457672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B829D6121519B92004FB394 /* CMS_Creative_164657191_Kingfisher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CMS_Creative_164657191_Kingfisher.jpg; path = ../../CMS_Creative_164657191_Kingfisher.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		4B7CEC172151966A00457672 /* swiftapp */ = {
 			isa = PBXGroup;
 			children = (
+				4B829D6121519B92004FB394 /* CMS_Creative_164657191_Kingfisher.jpg */,
 				4B7CEC182151966A00457672 /* AppDelegate.swift */,
 				4B7CEC1A2151966A00457672 /* ViewController.swift */,
 				4B7CEC1C2151966A00457672 /* Main.storyboard */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7CEC262151966B00457672 /* LaunchScreen.storyboard in Resources */,
+				4B829D6221519B92004FB394 /* CMS_Creative_164657191_Kingfisher.jpg in Resources */,
 				4B7CEC232151966B00457672 /* Assets.xcassets in Resources */,
 				4B7CEC1E2151966A00457672 /* Main.storyboard in Resources */,
 			);
