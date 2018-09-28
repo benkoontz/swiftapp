@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZND-qh-VfF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--preview image-->
+        <scene sceneID="KYe-W0-q4D">
+            <objects>
+                <viewController title="preview image" id="loH-an-4lq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DH4-c0-wTk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CMS_Creative_164657191_Kingfisher.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="64q-yI-Fzu">
+                                <rect key="frame" x="58" y="185" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9B-jF-lyh">
+                                <rect key="frame" x="58" y="185" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI3-MD-MVH">
+                                <rect key="frame" x="107" y="337" width="142" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enlarge Image"/>
+                                <connections>
+                                    <segue destination="8LR-Qd-0uj" kind="push" id="eMl-aZ-lOh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fbn-h8-q3u"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J6V-qk-fg8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ns-4e-Qi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="9.4452773613193415"/>
+        </scene>
+        <!--large image to zoom in on-->
+        <scene sceneID="ako-IP-TH9">
+            <objects>
+                <viewController title="large image to zoom in on" id="8LR-Qd-0uj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vU0-tF-gy9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CMS_Creative_164657191_Kingfisher.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sIu-US-Epl">
+                                <rect key="frame" x="16" y="159" width="343" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bgm-Gr-S3Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9QC-hj-Vzt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwF-op-AvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031.2" y="8.5457271364317844"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Ie-Xr-eUq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZND-qh-VfF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tGP-1G-h4U">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="loH-an-4lq" kind="relationship" relationship="rootViewController" id="n9V-pE-IfF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rfw-gO-chW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="9.4452773613193415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CMS_Creative_164657191_Kingfisher.jpg" width="1140" height="550"/>
+    </resources>
+</document>
